@@ -67,8 +67,8 @@ const Sidebar = (props: Props) => {
     <div className='w-64 h-screen p-5'>
         <h1 className='text-2xl font-bold mb-10 mt-4'>React-TypeScript Store</h1>
         <section>
-            <input type="text" className='border-2 rounded px-2 sm:mb-0' placeholder='Search prodect' value={searchQuery} onChange={e=>setSearchQuery(e.target.value)}></input>
-            <div className="flex justify-centter items-center">
+            <input type="text" className='border-2 h-[50px] rounded px-2 mb-3 sm:mb-0 ' placeholder='Search prodect' value={searchQuery} onChange={e=>setSearchQuery(e.target.value)}></input>
+            <div className="flex justify-centter items-center mt-5">
                 <input type='text' className='border-2 mr-2 px-5 py-3 mb-3 w-full' placeholder='Min' value={minPrice ?? ''} onChange={e=>setMinPrice(e.target.value ? parseFloat(e.target.value):undefined)}/>
                 <input type='text' className='border-2 mr-2 px-5 py-3 mb-3 w-full' placeholder='Max' value={maxPrice ?? ''} onChange={e=>setMaxPrice(e.target.value ? parseFloat(e.target.value):undefined)}/>
             </div>

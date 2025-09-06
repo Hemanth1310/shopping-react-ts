@@ -97,6 +97,11 @@ const MainContent = (props: Props) => {
         return buttons;
     }
 
+    const handleFilter =(filter:string)=>{
+        setFilter(filter)
+        handleDropDown()
+    }
+
   return (
     <section className='xl:w-[55rem] lg:w-[55rem] sm:w-[40rem] xs:w-[20rem] p-5'>
         <div className='mb-5'>
@@ -109,9 +114,9 @@ const MainContent = (props: Props) => {
                     </button>
                     {dropdownOppen &&(
                         <div className='absolute bg-white border border-gray-300 rounded mt-2 w-full sm:w-40'>
-                            <button onClick={()=>setFilter('cheap')} className='block px-4 py-2 w-full text-left hover:bg-gray-200'>Cheap</button>
-                            <button onClick={()=>setFilter('expensive')} className='block px-4 py-2 w-full text-left hover:bg-gray-200'>Expensive</button>
-                            <button onClick={()=>setFilter('popular')} className='block px-4 py-2 w-full text-left hover:bg-gray-200'>Popular</button>
+                            <button onClick={()=>handleFilter('cheap')} className='block px-4 py-2 w-full text-left hover:bg-gray-200'>Cheap</button>
+                            <button onClick={()=>handleFilter('expensive')} className='block px-4 py-2 w-full text-left hover:bg-gray-200'>Expensive</button>
+                            <button onClick={()=>handleFilter('popular')} className='block px-4 py-2 w-full text-left hover:bg-gray-200'>Popular</button>
                         </div>
                         
                     )}
