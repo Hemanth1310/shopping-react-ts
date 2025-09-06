@@ -11,7 +11,7 @@ const MainContent = (props: Props) => {
     const [products,setProducts] = useState<any[]>([])
     const [filter,setFilter]=useState<string>('all')
     const [currentPage,setCurrentPage] = useState(1)
-    const [dropdownOppen,setDropDownOpen] = useState(true)
+    const [dropdownOppen,setDropDownOpen] = useState(false)
     const itemsPerpage =12;
 
     useEffect(()=>{
