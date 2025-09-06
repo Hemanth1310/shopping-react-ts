@@ -12,7 +12,7 @@ function App() {
   <BrowserRouter>
     <div className='flex h-screen'>
       <Sidebar/>
-      <div className='rounded w-full flex justify-between flex-wrap'>
+      <div className='rounded w-full flex justify-center flex-wrap'>
         <Routes>
           <Route path='/' element={<MainContent/>}/>
           <Route path='/product/:id' element={<Product/>}/>
@@ -20,7 +20,7 @@ function App() {
       </div>
       <div>
         <TopSeller/>
-        {/* <PopularBlog/> */}
+        <PopularBlog/>
       </div>
     </div>
  </BrowserRouter>
