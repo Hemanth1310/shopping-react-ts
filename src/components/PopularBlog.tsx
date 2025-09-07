@@ -1,5 +1,5 @@
 import { MessageCircle, ThumbsUp } from 'lucide-react'
-import React from 'react'
+
 
 const blogs =[
     {
@@ -29,9 +29,9 @@ const blogs =[
 ]
 
 
-type Props = {}
 
-const PopularBlog = (props: Props) => {
+
+const PopularBlog = () => {
   return (
     <div className="bg-white p-5 w-[23rem] mb-5 mt-4 border ml-5  rounded">
         <h2 className='text-xl font-bold mb-5'>Popular Blogs</h2>

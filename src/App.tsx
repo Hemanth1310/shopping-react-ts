@@ -1,12 +1,11 @@
 import Sidebar from './components/Sidebar'
-import { useState } from 'react'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import MainContent from './components/MainContent'
 import Product from './components/Product'
 import TopSeller from './components/TopSeller'
 import PopularBlog from './components/PopularBlog'
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
   <BrowserRouter>

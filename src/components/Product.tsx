@@ -1,8 +1,8 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
-type Props = {}
+
 
 type Product = {
     id:string,
@@ -14,7 +14,7 @@ type Product = {
 
 }
 
-const Product = (props: Props) => {
+const Product = () => {
     const {id} = useParams<{id:string}>();
 
     const navigate=useNavigate()

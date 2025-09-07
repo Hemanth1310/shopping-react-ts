@@ -1,6 +1,6 @@
-import React, { useEffect ,useState} from 'react'
+import  { useEffect ,useState} from 'react'
 
-type Props = {}
+
 
 type Author={
     name:string,
@@ -10,7 +10,7 @@ type Author={
 
 }
 
-const TopSeller = (props: Props) => {
+const TopSeller = () => {
     const [authors,setAuthors] = useState<Author[]>([])
     
 

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useFilter } from './FilterContext'
 
-type Props = {}
+
 
 interface Product {
     category:string
@@ -12,10 +12,10 @@ interface FetchResponse {
 }
 
 
-const Sidebar = (props: Props) => {
-    const {searchQuery,setSearchQuery,selectedCategory,setSelectedCategory,minPrice,setMinPrice,maxPrice,setMaxPrice,keyword,setKeyword} =useFilter()
+const Sidebar = () => {
+    const {searchQuery,setSearchQuery,selectedCategory,setSelectedCategory,minPrice,setMinPrice,maxPrice,setMaxPrice,setKeyword} =useFilter()
     const [categories,setCategories] = useState<string[]>([])
-    const [keywords,setKeywords] =useState<string[]>([
+    const [keywords] =useState<string[]>([
         'apple',
         'watch',
         'Fashion',

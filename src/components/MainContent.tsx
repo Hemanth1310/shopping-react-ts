@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { useFilter } from './FilterContext'
 import { Tally3 } from 'lucide-react'
 import axios from 'axios'
 import BookCard from './BookCard'
 
-type Props = {}
 
-const MainContent = (props: Props) => {
+const MainContent = () => {
     const {searchQuery,selectedCategory,minPrice,maxPrice,keyword} = useFilter()
     const [products,setProducts] = useState<any[]>([])
     const [filter,setFilter]=useState<string>('all')
